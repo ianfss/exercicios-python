@@ -8,13 +8,9 @@ while True:
     vtotal += preço
     if preço >= 1000:
         cmil += 1
-    if contador == 1:
+    if contador == 1 or preço < vbarato:
         vbarato = preço
         pbarato = produto
-    else:
-        if preço < vbarato:
-            vbarato = preço
-            pbarato = produto
     continuar = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     while continuar not in 'SN':
         continuar = str(input('Quer continuar? [S/N] ')).upper().strip()[0]

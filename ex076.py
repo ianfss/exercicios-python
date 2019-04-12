@@ -1,14 +1,20 @@
 # Exercício 076 - Análise de dados em uma Tupla
 
-products = (('Lápis', 'Borracha', 'Caderno', 'Estojo', 'Transferidor', 'Compasso', 'Mochila', 'Canetas', 'Livro'),
-(1.75, 2.00, 15.90, 25.00, 4.20, 9.99, 120.32, 22.30, 34.90))
-print('LISTAGEM DE PREÇOS:')
-print(f'O produto "{products[0][0]}" custa R$ {products[1][0]:.2f}')
-print(f'O produto "{products[0][1]}" custa R$ {products[1][1]:.2f}')
-print(f'O produto "{products[0][2]}" custa R$ {products[1][2]:.2f}')
-print(f'O produto "{products[0][3]}" custa R$ {products[1][3]:.2f}')
-print(f'O produto "{products[0][4]}" custa R$ {products[1][4]:.2f}')
-print(f'O produto "{products[0][5]}" custa R$ {products[1][5]:.2f}')
-print(f'O produto "{products[0][6]}" custa R$ {products[1][6]:.2f}')
-print(f'O produto "{products[0][7]}" custa R$ {products[1][7]:.2f}')
-print(f'O produto "{products[0][8]}" custa R$ {products[1][8]:.2f}')
+productsList = ('Lápis', 1.75,
+                'Borracha', 2.00,
+                'Caderno', 15.90,
+                'Estojo', 25.00,
+                'Transferidor', 4.20,
+                'Compasso', 9.99,
+                'Mochila', 120.32,
+                'Canetas', 22.30,
+                'Livro', 34.90)
+print('-' * 40)
+print(f'{"LISTAGEM DE PREÇOS":^40}')
+print('-' * 40)
+for position in range(0, len(productsList)):
+    if position % 2 == 0:
+        print(f'{productsList[position]:.<30}', end='')
+    else:
+        print(f'R$ {productsList[position]:<1.2f}')
+print('-' * 40)

@@ -17,4 +17,3 @@ for words in wordList:
         for vogals in words:
                 if vogals in 'AEIOU':
                         print(vogals.lower(), end=' ')
-

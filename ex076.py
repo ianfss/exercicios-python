@@ -1,4 +1,4 @@
-# Exercício 076 - Análise de dados em uma Tupla
+# Exercício 076 - Lista de Preços com Tupla
 
 productsList = ('Lápis', 1.75,
                 'Borracha', 2.00,

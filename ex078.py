@@ -1,4 +1,4 @@
-# Exercício 077 - Maior e Menor valores na Lista
+# Exercício 078 - Maior e Menor valores na Lista
 numberList = []
 for numberPosition in range(0, 5):
     numberList.append(int(input(f'Digite um valor para a Posição {numberPosition}: ')))

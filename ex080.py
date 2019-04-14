@@ -1,4 +1,4 @@
-# Exercício 079 - Lista ordenada sem repetições
+# Exercício 080 - Lista ordenada sem repetições
 numberList = list()
 count = 0
 while True:

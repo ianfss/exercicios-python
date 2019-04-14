@@ -1,34 +1,78 @@
 # Exercício 080 - Lista ordenada sem repetições
-numberList = list()
+numberList = []
 count = 0
 while True:
-    if count == 3:
+    if count == 5:
         break
     number = int(input('Digite um valor: '))
+
     if count == 0:
-        numberList.insert(0, number)
+        numberList.append(number)
+        print('O valor foi adicionado ao final da lista...')
         count += 1
-        print('Adcionado ao final da lista...')
-    elif count == 1:
+
+    if count == 1:
+        if number < numberList[0]:
+            numberList.insert(0, number)
+            print('O valor foi adicionado na posição 0...')
+            count += 1
         if number > numberList[0]:
-            numberList.insert(1, number)
+            numberList.append(number)
+            print('O valor foi adicionado ao final da lista...')
             count += 1
-            print('Adcionado ao final da lista...')
-        else:
+
+    if count == 2:
+        if number < numberList[0]:
             numberList.insert(0, number)
+            print('O valor foi adicionado na posição 0...')
             count += 1
-            print('Adcionado na posição 0...')
-    elif count == 2:
+        if number > numberList[0] and number < numberList[1]:
+            numberList.insert(1, number)
+            print('O valor foi adicionado na posição 1...')
+            count += 1
         if number > numberList[1]:
-            numberList.insert(2, number)
+            numberList.append(number)
+            print('O valor foi adicionado ao final da lista...')
             count += 1
-            print('Adcionado ao final da lista...')
-        elif number < numberList[1] and number > numberList[0]:
-            numberList.insert(1, number)
-            count += 1
-            print('Adcionado na posição 1...')
-        elif number < numberList[0]:
+
+    if count == 3:
+        if number < numberList[0]:
             numberList.insert(0, number)
+            print('O valor foi adicionado na posição 0...')
             count += 1
-            print('Adcionado na posição 0...')
+        if number > numberList[0] and number < numberList[1]:
+            numberList.insert(1, number)
+            print('O valor foi adicionado na posição 1...')
+            count += 1
+        if number > numberList[1] and number < numberList[2]:
+            numberList.insert(2, number)
+            print('O valor foi adicionado na posição 2...')
+            count += 1
+        if number > numberList[2]:
+            numberList.append(number)
+            print('O valor foi adicionado ao final da lista...')
+            count += 1
+
+    if count == 4:
+        if number < numberList[0]:
+            numberList.insert(0, number)
+            print('O valor foi adicionado na posição 0...')
+            count += 1
+        if number > numberList[0] and number < numberList[1]:
+            numberList.insert(1, number)
+            print('O valor foi adicionado na posição 1...')
+            count += 1
+        if number > numberList[1] and number < numberList[2]:
+            numberList.insert(2, number)
+            print('O valor foi adicionado na posição 2...')
+            count += 1
+        if number > numberList[2] and number < numberList[3]:
+            numberList.insert(3, number)
+            print('O valor foi adicionado na posição 3...')
+            count += 1
+        if number > numberList[3]:
+            numberList.append(number)
+            print('O valor foi adicionado ao final da lista...')
+            count += 1
+
 print(numberList)

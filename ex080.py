@@ -6,6 +6,9 @@ while True:
         break
     number = int(input('Digite um valor: '))
 
+    if number in numberList:
+        print('Número repetido!')
+
     if count == 0:
         numberList.append(number)
         print('O valor foi adicionado ao final da lista...')
@@ -75,4 +78,4 @@ while True:
             print('O valor foi adicionado ao final da lista...')
             count += 1
 
-print(numberList)
+print(f'Os valores digitados em ordem foram {numberList}')

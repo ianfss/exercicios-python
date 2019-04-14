@@ -1,3 +1,3 @@
 #Exercício 001
 
-print('Olá, mundo!')
+print('Hello World')

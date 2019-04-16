@@ -5,10 +5,10 @@ oddList = []
 while True:
     number = int(input('Digite um número: '))
     numberList.append(number)
-    if number % 2:
-        oddList.append(number)
-    else:
+    if number % 2 == 0:
         evenList.append(number)
+    else:
+        oddList.append(number)
     option = str(input('Quer continuar? [S/N] '))
     if option in 'Nn':
         break
